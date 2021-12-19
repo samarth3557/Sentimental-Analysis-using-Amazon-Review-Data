@@ -6,4 +6,6 @@ Predicting a review's numeric rating based on the textual review is a quintessen
      Given a text book review, predict one of the three (positive, neutral, negative) sentiment classes.
 
 
-  ![image of all]('https://github.com/samarth3557/Sentimental-Analysis-using-Amazon-Review-Data/blob/main/Model%20Deployement/Amazon-Review-Analysis.png')
+   ![image of all]('https://github.com/samarth3557/Sentimental-Analysis-using-Amazon-Review-Data/blob/main/Model%20Deployement/Amazon-Review-Analysis.png')
+   ![image of all airports](https://github.com/samarth3557/Flight-Fare-Prediction-using-ML-model/blob/main/Images/india-airports.jpg)
+   
