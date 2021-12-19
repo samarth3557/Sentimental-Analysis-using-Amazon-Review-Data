@@ -1,0 +1,65 @@
+Sentimental Analysis using Amazon Review Data
+
+Before Starting with our Analysis, one must be aware of using the Anaconda Jupyter Notebook
+
+1. For Data Preprocessing:
+   # importing the libraries related to the data manipulation.
+     import numpy as np
+     import pandas as pd
+     import string
+
+   # importing the libraries related to the data_visualization.
+     import seaborn as sns
+     import matplotlib.pyplot as plt
+
+   # TextBlob is a Python library for processing textual data.
+     from textblob import TextBlob
+   
+   # datapath = E:\DOWNLOADS\book_review.csv
+     Book_review = pd.read_csv(r'E:\DOWNLOADS\book_review.csv')
+     Book_review
+
+   # importing the NLP library
+     import nltk
+     from nltk.corpus import stopwords
+     nltk.download('stopwords')
+     stopwords = nltk.corpus.stopwords.words('english')
+     For Lemmatization: from nltk.stem import WordNetLemmatizer
+     For Stemming : from nltk.stem.porter import PorterStemmer
+ 
+     For Developing a Model:
+       from sklearn.model_selection import train_test_split
+       from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer 
+
+     For KNN :
+     # import KNN classifer and fit on the Training dataset
+       from sklearn.neighbors import KNeighborsClassifier
+       model1 = KNeighborsClassifier()
+
+     # Calculating F1 score
+       from sklearn import metrics
+       from sklearn.metrics import f1_score
+
+
+2. Once the Model has been developed with an good accuracy, the next step would be the    model deployement:
+   
+   In this Analysis, we will be deploying the model using streamlit:
+
+   Before executing, install streamlit using anaconda prompt : pip install streamlit  
+
+  # Import the required libraries:
+    import streamlit as st  
+    from textblob import TextBlob
+    import pandas as pd
+    from vaderSentiment.vaderSentiment import SentimentIntensityAnalyzer
+
+
+
+For executing the data preprocessing tasks:
+   1. Google Colab
+   2. Anaconda Jupyter notebook
+
+For Executing the app.py file:
+    1. Anaconda Spyder
+    2. Visual Studio
+
